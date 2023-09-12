@@ -1,0 +1,29 @@
+<div class="main-container">
+  <div>
+    <ul>
+      <li>
+        <div class="item-folder">
+          <i class="fas fa-folder-open"></i>
+          <button class="main-folders">root</button>
+        </div>
+        <ul>
+          <li class="item-folder">
+            <i class="fas fa-file" style="margin-right: 5px"></i>
+            <button class="main-folders">archive</button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <div class="main-header">
+      <div class="main-name-document">
+        <span>Documento: archivo</span>
+      </div>
+    </div>
+    <angular-editor
+      [(ngModel)]="editorContent"
+      [config]="config"
+    ></angular-editor>
+  </div>
+</div>
